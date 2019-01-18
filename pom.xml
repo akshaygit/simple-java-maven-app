@@ -32,18 +32,15 @@
           </archive>
         </configuration>
         <executions>
-					<execution>
-						<phase>validate</phase>
-						<goals>
-							<goal>run</goal>
-						</goals>
-						<configuration>
-							<tasks>
-								<echo>$key</echo>
-							</tasks>
-						</configuration>
-					</execution>
-				</executions>
+	 <execution>
+	   <phase>validate</phase>
+	     <configuration>
+		<tasks>
+		   <echo>$key</echo>
+	        </tasks>
+	    </configuration>
+	 </execution>
+	</executions>
       </plugin>
     </plugins>
   </build>
