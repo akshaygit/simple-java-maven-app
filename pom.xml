@@ -13,9 +13,6 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
-     <tasks> 
-      <echo>$key</echo>
-     </tasks>
     </dependency>
   </dependencies>
   <build>
@@ -34,6 +31,19 @@
             </manifest>
           </archive>
         </configuration>
+        <executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<echo>$key</echo>
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
       </plugin>
     </plugins>
   </build>
