@@ -13,7 +13,9 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
+     <tasks> 
       <echo>$key</echo>
+     </tasks>
     </dependency>
   </dependencies>
   <build>
